@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="hidden" id="overlay"><div class="overlay">
+            <h2>Snake Game</h2><p>Game Over</p>
+        <button onclick="newGame()" id="newGame">New Game</button></div></div>
+        <header>
+            <h1 id="">Snake Game</h1>
+            <p>Lives : <span id="lives">lives</span></p>
+        </header>
+        <div class="wrapper">
+            <div class="grid" id="gridContainer">
+         
+            </div>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>

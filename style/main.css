@@ -1,0 +1,113 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+body{
+    min-height: 100vh;
+    background: linear-gradient(45deg, rgba(138,49,180,1) 0%, rgba(31,84,140,1) 48%, rgba(49,130,206,1) 100%);;
+}
+.container{position: relative;
+    max-width: 1440px;
+    min-height:95vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+#overlay{
+    color: white;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(128, 128, 128, 0.587);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 150;
+}
+.overlay{
+    background: linear-gradient(45deg, rgba(138,49,180,1) 0%, rgba(31,84,140,1) 48%, rgba(49,130,206,1) 100%);;
+    width: 70%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.overlay>p{
+    font-size: 3rem;
+    color: rgb(171, 23, 23);
+}
+.overlay>h2{
+    font-size: 2.5rem;
+}
+.overlay>button{
+    font-size: 1.5rem;
+    color: white;
+    background-color: transparent;
+    padding: 0.5em 3em;
+    border: 0.2rem solid white;
+    border-radius: 0.3rem;
+}
+.overlay>button:hover{
+    color: black;
+    background-color: white;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    max-height: 10vh;
+}
+.wrapper{
+    width: 100%;
+ 
+}
+.grid{
+    width: 80vh;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    margin: auto;
+    /* gap: 0.5rem; */
+    /* border: 2px solid white; */
+    
+}
+.gridCell{
+    width: 100%;
+    /* border: 2px solid white; */
+    aspect-ratio: 1/1;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.active{
+    background-color: rgb(232, 232, 41);
+    border-radius:50% ;
+    
+}
+.head{
+    background-color: rgb(204, 18, 204);
+    border-radius:50% ;
+}
+.yellowDot{
+    border-radius:50% ;
+    background-color:rgb(23, 182, 23);
+}
+.redDot{
+    background-color: red;
+    border-radius:50% ;
+}
+.limit{
+    background: white !important;
+    opacity: 0.1;
+    border: none !important;
+    color: aliceblue;
+}
+.hidden{
+    display: none !important;
+}
